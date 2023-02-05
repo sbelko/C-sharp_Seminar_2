@@ -4,8 +4,12 @@
 // 782 -> 8
 // 918 -> 1
 Console.Clear();
-Console.Write("Введите 3-значное число: ");
+Console.Write("Введите 3-значное положительное число: ");
 int a = int.Parse(Console.ReadLine()!);
-int a1 = a / 10;
-int a2 = a1 % 10;
-Console.Write($"Вторая цифра: {a2} ");
+if (a > 999 || a < 100) { Console.Write("Несоответствие числа условию!"); }
+else
+{
+    int a1 = a / 10;
+    int a2 = a1 % 10;
+    Console.Write($"Вторая цифра: {a2} ");
+}
