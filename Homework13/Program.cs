@@ -5,11 +5,11 @@
 Console.Clear();
 Console.Write("Введите положительное число: ");
 int a = int.Parse(Console.ReadLine()!);
-if (a <0 ) { Console.Write("Несоответствие числа условию!"); }
-else if (a>=0 && a<100) Console.Write("Третьей цифры нет");
-else 
+if (a < 0) { Console.Write("Несоответствие числа условию!"); }
+else if (a >= 0 && a < 100) Console.Write("Третьей цифры нет");
+else
 {
-   while (a>999) {a=a/10;}
-   a=a%10;
-   Console.Write($"Третья цифра: {a} "); 
+    while (a > 999) { a = a / 10; }
+    a = a % 10;
+    Console.Write($"Третья цифра: {a} ");
 }
